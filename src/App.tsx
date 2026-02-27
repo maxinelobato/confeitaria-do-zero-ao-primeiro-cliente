@@ -96,7 +96,7 @@ const Button = ({ children, className = "", primary = false, href = "#" }: { chi
       } : undefined
     }}
     className={`inline-block px-10 py-5 rounded-full font-bold text-white uppercase tracking-widest text-sm transition-all duration-50 shadow-xl relative overflow-hidden group text-center ${primary
-      ? "bg-gradient-to-r from-brand-green to-emerald-500 hover:shadow-brand-green/40"
+      ? "bg-linear-to-r from-brand-green to-emerald-500 hover:shadow-brand-green/40"
       : "bg-brand-olive hover:bg-olive-600"
       } ${className}`}
   >
@@ -109,7 +109,7 @@ const Button = ({ children, className = "", primary = false, href = "#" }: { chi
         initial={{ x: "-100%" }}
         animate={{ x: "200%" }}
         transition={{ duration: 1.5, repeat: Infinity, ease: "linear", repeatDelay: 0.5 }}
-        className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12"
+        className="absolute inset-0 bg-linear-to-r from-transparent via-white/20 to-transparent skew-x-12"
       />
     )}
   </motion.a>
@@ -187,7 +187,7 @@ export default function App() {
             <motion.div
               whileInView={{ opacity: 1, y: 0 }}
               initial={{ opacity: 0, y: 20 }}
-              className="rounded-[40px] overflow-hidden shadow-2xl aspect-[4/5]"
+              className="rounded-[40px] overflow-hidden shadow-2xl aspect-4/5"
             >
               <img src="/img1.webp" alt="Bolo decorado" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
             </motion.div>
@@ -410,7 +410,7 @@ export default function App() {
               <motion.div
                 whileHover={{ y: -15, rotate: 0 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                className="relative -mt-16 sm:-mt-40 md:-mt-54 w-full max-w-105 aspect-3/4 bg-neutral-900 rounded-[3.5rem] p-4 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.6)] border-[12px] border-neutral-800 transform -rotate-2 cursor-pointer"
+                className="relative -mt-16 sm:-mt-40 md:-mt-54 w-full max-w-105 aspect-3/4 bg-neutral-900 rounded-[3.5rem] p-4 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.6)] border-12 border-neutral-800 transform -rotate-2 cursor-pointer"
               >
                 {/* Screen */}
                 <div className="relative w-full h-auto rounded-[2.5rem] overflow-hidden">
