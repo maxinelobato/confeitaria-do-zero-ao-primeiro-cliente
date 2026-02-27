@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, useScroll, useTransform, AnimatePresence } from "motion/react";
-import { BookOpenIcon, CalculatorIcon, CalendarBlankIcon, CheckCircleIcon, CheckIcon, ChefHatIcon, ClipboardTextIcon, CopyIcon, FishIcon, LayoutIcon, NotePencilIcon, StarIcon, StorefrontIcon, TelevisionIcon, UsersIcon, XCircleIcon } from "@phosphor-icons/react/ssr";
+import { BookOpenIcon, CalendarBlankIcon, CheckCircleIcon, CheckIcon, ChefHatIcon, ClipboardTextIcon, CopyIcon, LayoutIcon, NotePencilIcon, StarIcon, StorefrontIcon, TelevisionIcon, UsersIcon, XCircleIcon } from "@phosphor-icons/react/ssr";
 
 const CouponBadge = ({ code, light = false }: { code: string, light?: boolean }) => {
   const [copied, setCopied] = useState(false);
