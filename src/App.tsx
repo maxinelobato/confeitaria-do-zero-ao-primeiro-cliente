@@ -81,10 +81,10 @@ const Button = ({ children, className = "", primary = false, href = "#" }: { chi
     href={href}
     target="_blank"
     rel="noopener noreferrer"
-    whileHover={{ scale: 1.1 }}
-    whileTap={{ scale: 0.95 }}
+    // whileHover={{ scale: 1.1 }}
+    // whileTap={{ scale: 0.95 }}
     animate={primary ? {
-      boxShadow: ["0px 0px 0px rgba(0, 214, 50, 0)", "0px 0px 20px rgba(0, 214, 50, 0.4)", "0px 0px 0px rgba(0, 214, 50, 0)"],
+      boxShadow: ["0px 0px 0px rgba(0, 214, 50, 0)", "0px 0px 20px rgba(0, 214, 50, 0.8)", "0px 0px 0px rgba(0, 214, 50, 0)"],
     } : {}}
     transition={{
       duration: 0.15,
@@ -109,7 +109,7 @@ const Button = ({ children, className = "", primary = false, href = "#" }: { chi
         initial={{ x: "-100%" }}
         animate={{ x: "200%" }}
         transition={{ duration: 1.5, repeat: Infinity, ease: "linear", repeatDelay: 0.5 }}
-        className="absolute inset-0 bg-linear-to-r from-transparent via-white/20 to-transparent skew-x-12"
+        className="absolute inset-0 bg-linear-to-r from-transparent via-white/40 to-transparent skew-x-12"
       />
     )}
   </motion.a>
